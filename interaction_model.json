@@ -1,0 +1,106 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "registratore vocale",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "ScriviIntent",
+          "slots": [],
+          "samples": [
+            "scrivi",
+            "inizia a scrivere",
+            "voglio scrivere"
+          ]
+        },
+        {
+          "name": "DictationIntent",
+          "slots": [
+            {
+              "name": "dictation",
+              "type": "CatchAll"
+            }
+          ],
+          "samples": [
+            "{dictation}"
+          ]
+        },
+        {
+          "name": "FinishIntent",
+          "slots": [],
+          "samples": [
+            "finish",
+            "ho finito",
+            "termina"
+          ]
+        },
+        {
+          "name": "ChiudiIntent",
+          "slots": [],
+          "samples": [
+            "chiudi",
+            "esci",
+            "basta"
+          ]
+        },
+        {
+          "name": "InviaIntent",
+          "slots": [],
+          "samples": [
+            "invia",
+            "invia note",
+            "manda email",
+            "spedisci tutto"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "CatchAll",
+          "values": [
+            {
+              "name": {
+                "value": "ciao"
+              }
+            },
+            {
+              "name": {
+                "value": "questo è un testo"
+              }
+            },
+            {
+              "name": {
+                "value": "esempio"
+              }
+            },
+            {
+              "name": {
+                "value": "qualsiasi cosa"
+              }
+            },
+            {
+              "name": {
+                "value": "altro testo"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "WELCOME_MESSAGE": "Benvenuto. I comandi sono scrivi e chiudi.",
+    "CARD_TITLE": "Voice Memo",
+    "START_DICTATION": "Inizia a dettare. Di 'finish' quando hai finito.",
+    "LISTENING": "Ti ascolto.",
+    "NOT_RECORDING_START": "Non sto registrando. Di 'scrivi' per iniziare.",
+    "CONTINUE_OR_FINISH": "Ok. Continua o di 'finish'.",
+    "SAVED": "Salvato.",
+    "NO_TEXT_RECORDED": "Nessun testo registrato.",
+    "WHAT_TO_DO_NEXT": "Cosa vuoi fare? Scrivi o chiudi?",
+    "WRITE_OR_CLOSE": "Scrivi o chiudi?",
+    "NOT_RECORDING_WHAT_NEXT": "Non stavo registrando. Cosa vuoi fare? Scrivi o chiudi?",
+    "GOODBYE": "Ciao.",
+    "HELP_MESSAGE": "Puoi dire scrivi per iniziare a registrare, o chiudi per uscire.",
+    "ERROR_MESSAGE": "Scusa, non ho capito. Riprova.",
+    "EMAIL_SENT": "Ho inviato tutte le tue note via email.",
+    "EMAIL_ERROR": "C'è stato un errore nell'invio dell'email.",
+    "NO_NOTES_TO_SEND": "Non ci sono note da inviare.",
+    "EMAIL_PERMISSION_NEEDED": "Non ho il permesso di accedere alla tua email. Per favore abilita i permessi nell'app Alexa.",
+    "EMAIL_NOT_FOUND": "Non riesco a trovare il tuo indirizzo email. Assicurati di averlo impostato nell'app Alexa."
+}

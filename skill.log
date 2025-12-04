@@ -1,0 +1,244 @@
+2025-12-04 17:18:38,200 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 17:18:38,200 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 17:19:17,501 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 17:19:17,920 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 17:19:17,920 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 17:20:01,313 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 17:20:01] "POST / HTTP/1.1" 200 -
+2025-12-04 17:20:09,172 - __main__ - INFO - Profile email access denied (permissions missing).
+2025-12-04 17:20:09,172 - __main__ - INFO - Recipient is None. Sending AskForPermissionsConsentCard.
+2025-12-04 17:20:09,173 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 17:20:09] "POST / HTTP/1.1" 200 -
+2025-12-04 17:20:09,876 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 17:20:09] "POST / HTTP/1.1" 200 -
+2025-12-04 18:27:56,733 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 18:27:57,241 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 18:27:57,242 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 18:28:11,757 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 18:28:12,119 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 18:28:12,120 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 18:32:45,631 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 19:05:05,598 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 19:05:05,598 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 19:05:05,598 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:05:05,881 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:05:05,882 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:05:49,529 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:05:49] "POST / HTTP/1.1" 200 -
+2025-12-04 19:05:56,389 - __main__ - ERROR - Critical error in InviaIntentHandler: 'ResponseFactory' object has no attribute 'with_ask_for_permissions_consent_card'
+Traceback (most recent call last):
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 338, in __deserialize_model
+    return obj_cast(payload)
+  File "/usr/lib/python3.10/enum.py", line 385, in __call__
+    return cls.__new__(cls, value)
+  File "/usr/lib/python3.10/enum.py", line 710, in __new__
+    raise ve_exc
+ValueError: 'ACCESS_DENIED' is not a valid ErrorCode
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 361, in __deserialize_model
+    self.__deserialize(
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 236, in __deserialize
+    return self.__deserialize_model(payload, obj_type)
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 375, in __deserialize_model
+    raise SerializationException(str(e))
+ask_sdk_core.exceptions.SerializationException: 'ACCESS_DENIED' is not a valid ErrorCode
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roberto/progetti/alexa-test/app.py", line 161, in handle
+    recipient = ups_service.get_profile_email()
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_model/services/ups/ups_service_client.py", line 103, in get_profile_email
+    api_response = self.invoke(
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_model/services/base_service_client.py", line 148, in invoke
+    exception_body = self._serializer.deserialize(
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 170, in deserialize
+    return self.__deserialize(payload, obj_type)
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 236, in __deserialize
+    return self.__deserialize_model(payload, obj_type)
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 375, in __deserialize_model
+    raise SerializationException(str(e))
+ask_sdk_core.exceptions.SerializationException: 'ACCESS_DENIED' is not a valid ErrorCode
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roberto/progetti/alexa-test/app.py", line 168, in handle
+    .with_ask_for_permissions_consent_card(["alexa::profile:email:read"])
+AttributeError: 'ResponseFactory' object has no attribute 'with_ask_for_permissions_consent_card'
+2025-12-04 19:05:56,401 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:05:56] "POST / HTTP/1.1" 200 -
+2025-12-04 19:08:16,290 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 19:08:16,374 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:08:16,775 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:08:16,776 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:09:03,387 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 19:09:03,387 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 19:09:03,388 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:09:03,686 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:09:03,686 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:09:18,054 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:09:18] "POST / HTTP/1.1" 200 -
+2025-12-04 19:09:25,028 - __main__ - ERROR - Error fetching email: 'ACCESS_DENIED' is not a valid ErrorCode
+Traceback (most recent call last):
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 338, in __deserialize_model
+    return obj_cast(payload)
+  File "/usr/lib/python3.10/enum.py", line 385, in __call__
+    return cls.__new__(cls, value)
+  File "/usr/lib/python3.10/enum.py", line 710, in __new__
+    raise ve_exc
+ValueError: 'ACCESS_DENIED' is not a valid ErrorCode
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 361, in __deserialize_model
+    self.__deserialize(
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 236, in __deserialize
+    return self.__deserialize_model(payload, obj_type)
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 375, in __deserialize_model
+    raise SerializationException(str(e))
+ask_sdk_core.exceptions.SerializationException: 'ACCESS_DENIED' is not a valid ErrorCode
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roberto/progetti/alexa-test/app.py", line 161, in handle
+    recipient = ups_service.get_profile_email()
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_model/services/ups/ups_service_client.py", line 103, in get_profile_email
+    api_response = self.invoke(
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_model/services/base_service_client.py", line 148, in invoke
+    exception_body = self._serializer.deserialize(
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 170, in deserialize
+    return self.__deserialize(payload, obj_type)
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 236, in __deserialize
+    return self.__deserialize_model(payload, obj_type)
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 375, in __deserialize_model
+    raise SerializationException(str(e))
+ask_sdk_core.exceptions.SerializationException: 'ACCESS_DENIED' is not a valid ErrorCode
+2025-12-04 19:09:25,029 - __main__ - ERROR - Critical error in InviaIntentHandler: 'ResponseFactory' object has no attribute 'with_ask_for_permissions_consent_card'
+Traceback (most recent call last):
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 338, in __deserialize_model
+    return obj_cast(payload)
+  File "/usr/lib/python3.10/enum.py", line 385, in __call__
+    return cls.__new__(cls, value)
+  File "/usr/lib/python3.10/enum.py", line 710, in __new__
+    raise ve_exc
+ValueError: 'ACCESS_DENIED' is not a valid ErrorCode
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 361, in __deserialize_model
+    self.__deserialize(
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 236, in __deserialize
+    return self.__deserialize_model(payload, obj_type)
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 375, in __deserialize_model
+    raise SerializationException(str(e))
+ask_sdk_core.exceptions.SerializationException: 'ACCESS_DENIED' is not a valid ErrorCode
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roberto/progetti/alexa-test/app.py", line 161, in handle
+    recipient = ups_service.get_profile_email()
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_model/services/ups/ups_service_client.py", line 103, in get_profile_email
+    api_response = self.invoke(
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_model/services/base_service_client.py", line 148, in invoke
+    exception_body = self._serializer.deserialize(
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 170, in deserialize
+    return self.__deserialize(payload, obj_type)
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 236, in __deserialize
+    return self.__deserialize_model(payload, obj_type)
+  File "/home/roberto/.local/lib/python3.10/site-packages/ask_sdk_core/serialize.py", line 375, in __deserialize_model
+    raise SerializationException(str(e))
+ask_sdk_core.exceptions.SerializationException: 'ACCESS_DENIED' is not a valid ErrorCode
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roberto/progetti/alexa-test/app.py", line 168, in handle
+    .with_ask_for_permissions_consent_card(["alexa::profile:email:read"])
+AttributeError: 'ResponseFactory' object has no attribute 'with_ask_for_permissions_consent_card'
+2025-12-04 19:09:25,030 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:09:25] "POST / HTTP/1.1" 200 -
+2025-12-04 19:12:03,327 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 19:12:03,414 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:12:03,732 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:12:03,733 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:12:05,033 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 19:12:05,118 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:12:05,440 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:12:05,441 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:13:36,324 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 19:13:36,324 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 19:13:36,325 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:13:36,625 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:13:36,625 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:13:47,237 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:13:47] "POST / HTTP/1.1" 200 -
+2025-12-04 19:13:57,984 - __main__ - INFO - Permission missing or access denied: 'ACCESS_DENIED' is not a valid ErrorCode
+2025-12-04 19:13:57,985 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:13:57] "POST / HTTP/1.1" 200 -
+2025-12-04 19:13:58,362 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:13:58] "POST / HTTP/1.1" 200 -
+2025-12-04 19:15:44,154 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 19:15:44,154 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 19:15:44,155 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:15:44,450 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:15:44,450 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:16:02,735 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:16:02] "POST / HTTP/1.1" 200 -
+2025-12-04 19:16:08,384 - __main__ - INFO - Permission missing or access denied: 'ACCESS_DENIED' is not a valid ErrorCode
+2025-12-04 19:16:08,384 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:16:08] "POST / HTTP/1.1" 200 -
+2025-12-04 19:16:08,863 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:16:08] "POST / HTTP/1.1" 200 -
+2025-12-04 19:18:17,874 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 19:18:17,960 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:18:18,275 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:18:18,276 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:30:59,371 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 19:30:59,371 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-04 19:30:59,372 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:30:59,668 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:30:59,669 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:31:10,599 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:31:10] "POST / HTTP/1.1" 200 -
+2025-12-04 19:31:16,380 - __main__ - INFO - User Permissions: None
+2025-12-04 19:31:16,645 - __main__ - INFO - Permission missing or access denied: 'ACCESS_DENIED' is not a valid ErrorCode
+2025-12-04 19:31:16,646 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:31:16] "POST / HTTP/1.1" 200 -
+2025-12-04 19:31:16,999 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:31:16] "POST / HTTP/1.1" 200 -
+2025-12-04 19:33:17,581 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 19:33:17,669 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:33:17,990 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:33:17,991 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:35:11,508 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:35:11] "POST / HTTP/1.1" 200 -
+2025-12-04 19:35:16,812 - __main__ - INFO - No permissions found in request context
+2025-12-04 19:35:16,812 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:35:16] "POST / HTTP/1.1" 200 -
+2025-12-04 19:35:17,317 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:35:17] "POST / HTTP/1.1" 200 -
+2025-12-04 19:37:06,884 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/verify_card.py', reloading
+2025-12-04 19:37:06,979 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:37:07,320 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:37:07,320 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:37:30,763 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 19:37:30,845 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:37:31,196 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:37:31,197 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:38:28,723 - __main__ - INFO - Response JSON: {"version": "1.0", "sessionAttributes": {}, "userAgent": "ask-python/1.19.0 Python/3.10.12", "response": {"outputSpeech": {"type": "SSML", "ssml": "<speak>Benvenuto. I comandi sono scrivi e chiudi.</speak>"}, "card": {"type": "Simple", "title": "Voice Memo", "content": "Benvenuto. I comandi sono scrivi e chiudi."}, "reprompt": {"outputSpeech": {"type": "SSML", "ssml": "<speak>Benvenuto. I comandi sono scrivi e chiudi.</speak>"}}, "shouldEndSession": false}}
+2025-12-04 19:38:28,724 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:38:28] "POST / HTTP/1.1" 200 -
+2025-12-04 19:38:34,822 - __main__ - INFO - No permissions found in request context
+2025-12-04 19:38:34,822 - __main__ - INFO - Response JSON: {"version": "1.0", "sessionAttributes": {}, "userAgent": "ask-python/1.19.0 Python/3.10.12", "response": {"outputSpeech": {"type": "SSML", "ssml": "<speak>Non ho il permesso di accedere alla tua email. Per favore abilita i permessi nell'app Alexa.</speak>"}, "card": {"type": "AskForPermissionsConsent", "permissions": ["alexa::profile:email:read"]}}}
+2025-12-04 19:38:34,823 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:38:34] "POST / HTTP/1.1" 200 -
+2025-12-04 19:38:35,268 - __main__ - INFO - Response JSON: {"version": "1.0", "sessionAttributes": {}, "userAgent": "ask-python/1.19.0 Python/3.10.12", "response": {}}
+2025-12-04 19:38:35,268 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:38:35] "POST / HTTP/1.1" 200 -
+2025-12-04 19:40:23,163 - werkzeug - INFO -  * Detected change in '/home/roberto/progetti/alexa-test/app.py', reloading
+2025-12-04 19:40:23,264 - werkzeug - INFO -  * Restarting with stat
+2025-12-04 19:40:23,584 - werkzeug - WARNING -  * Debugger is active!
+2025-12-04 19:40:23,584 - werkzeug - INFO -  * Debugger PIN: 131-702-279
+2025-12-04 19:46:44,790 - __main__ - INFO - Response JSON: {"version": "1.0", "sessionAttributes": {}, "userAgent": "ask-python/1.19.0 Python/3.10.12", "response": {"outputSpeech": {"type": "SSML", "ssml": "<speak>Benvenuto. I comandi sono scrivi e chiudi.</speak>"}, "card": {"type": "Simple", "title": "Voice Memo", "content": "Benvenuto. I comandi sono scrivi e chiudi."}, "reprompt": {"outputSpeech": {"type": "SSML", "ssml": "<speak>Benvenuto. I comandi sono scrivi e chiudi.</speak>"}}, "shouldEndSession": false}}
+2025-12-04 19:46:44,791 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:46:44] "POST / HTTP/1.1" 200 -
+2025-12-04 19:46:50,142 - __main__ - INFO - No permissions found in request context
+2025-12-04 19:46:50,142 - __main__ - INFO - Response JSON: {"version": "1.0", "sessionAttributes": {}, "userAgent": "ask-python/1.19.0 Python/3.10.12", "response": {"outputSpeech": {"type": "SSML", "ssml": "<speak>Non ho il permesso di accedere alla tua email. Per favore abilita i permessi nell'app Alexa.</speak>"}, "card": {"type": "AskForPermissionsConsent", "permissions": ["alexa::profile:email:read"]}}}
+2025-12-04 19:46:50,143 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:46:50] "POST / HTTP/1.1" 200 -
+2025-12-04 19:46:50,601 - __main__ - INFO - Session ended reason: SessionEndedReason.ERROR
+2025-12-04 19:46:50,601 - __main__ - INFO - Session ended error: {'message': 'In order to be requested, alexa::profile:email:read must be '
+            'declared as permission used by the skill. for requestId '
+            'amzn1.echo-api.request.4f2b2ff6-84c5-410d-9f81-35262db8f893',
+ 'object_type': 'INVALID_RESPONSE'}
+2025-12-04 19:46:50,602 - __main__ - INFO - Response JSON: {"version": "1.0", "sessionAttributes": {}, "userAgent": "ask-python/1.19.0 Python/3.10.12", "response": {}}
+2025-12-04 19:46:50,602 - werkzeug - INFO - 127.0.0.1 - - [04/Dec/2025 19:46:50] "POST / HTTP/1.1" 200 -
